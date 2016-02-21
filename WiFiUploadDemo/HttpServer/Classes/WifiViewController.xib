@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CocoaWebResourceViewController">
             <connections>
+                <outlet property="backImageView" destination="uSZ-Hv-229" id="u5a-MD-RFg"/>
                 <outlet property="progressView" destination="UIN-YB-GBW" id="zk7-ie-Mzt"/>
                 <outlet property="urlLabel" destination="7" id="MLU-FK-kta"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -18,21 +19,42 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="32" y="369" width="14" height="18"/>
+                    <rect key="frame" x="32" y="429" width="14" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.19108431880000001" green="0.68941515750000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wifi_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                    <rect key="frame" x="0.0" y="30" width="320" height="177"/>
-                </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="请在电脑浏览器输入一下地址:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43">
-                    <rect key="frame" x="32" y="340" width="197" height="21"/>
+                    <rect key="frame" x="32" y="388" width="197" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="sov-SV-RgR"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" white="0.94977110310000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="通过wifi可以将在电脑和手机之间传输文件" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                    <rect key="frame" x="32" y="347" width="288" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gVc-pU-h3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-YB-GBW" customClass="ASProgressPopUpView">
+                    <rect key="frame" x="32" y="295" width="256" height="2"/>
+                </progressView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wifi_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                    <rect key="frame" x="0.0" y="80" width="320" height="145"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="uSZ-Hv-229">
+                    <rect key="frame" x="245" y="32" width="40" height="40"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoU-gT-QDz">
+                    <rect key="frame" x="32" y="302" width="56" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="注: 请确保手机和电脑处在同一网络中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88">
@@ -44,42 +66,39 @@
                     <color key="textColor" red="0.77677055029999997" green="0.060213798540000002" blue="0.095607755769999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="通过wifi可以将电脑上的书籍传递给手机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28">
-                    <rect key="frame" x="0.0" y="300" width="320" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="gVc-pU-h3g"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-YB-GBW" customClass="ASProgressPopUpView">
-                    <rect key="frame" x="32" y="239" width="245" height="2"/>
-                </progressView>
             </subviews>
             <color key="backgroundColor" red="0.97178583559999998" green="0.97178583559999998" blue="0.97178583559999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="7" firstAttribute="top" secondItem="43" secondAttribute="bottom" constant="8" symbolic="YES" id="0s2-9b-plc"/>
-                <constraint firstItem="28" firstAttribute="top" secondItem="1" secondAttribute="top" constant="300" id="2no-8V-3ri"/>
+                <constraint firstAttribute="trailing" secondItem="uSZ-Hv-229" secondAttribute="trailing" constant="35" id="2Vk-d4-a8i"/>
                 <constraint firstAttribute="trailing" secondItem="88" secondAttribute="trailing" constant="43" id="3cp-kr-y1U"/>
+                <constraint firstItem="43" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="20" id="5cZ-z9-NxQ"/>
                 <constraint firstAttribute="trailing" secondItem="28" secondAttribute="trailing" id="69K-fd-b2D"/>
-                <constraint firstItem="88" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="22" id="71y-K0-bb8"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="43" secondAttribute="bottom" constant="20" id="BII-4u-Qp6"/>
                 <constraint firstAttribute="trailing" secondItem="43" secondAttribute="trailing" constant="91" id="BVr-2u-hIm"/>
+                <constraint firstAttribute="trailing" secondItem="UIN-YB-GBW" secondAttribute="trailing" constant="32" id="Drg-KD-McG"/>
                 <constraint firstItem="88" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="Jrr-jX-U7P"/>
+                <constraint firstItem="MoU-gT-QDz" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="KHR-n2-XBJ"/>
                 <constraint firstItem="88" firstAttribute="leading" secondItem="43" secondAttribute="leading" id="MUY-0K-BDW"/>
-                <constraint firstItem="43" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="19" id="NnY-kC-SHN"/>
-                <constraint firstItem="28" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="93" id="S4t-Tu-AhH"/>
+                <constraint firstItem="UIN-YB-GBW" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="70" id="O6S-XH-aK2"/>
+                <constraint firstItem="UIN-YB-GBW" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="P5S-ra-BL5"/>
+                <constraint firstItem="uSZ-Hv-229" firstAttribute="top" secondItem="1" secondAttribute="top" constant="32" id="T0m-LP-irI"/>
+                <constraint firstItem="28" firstAttribute="top" secondItem="UIN-YB-GBW" secondAttribute="bottom" constant="50" id="X5j-Xw-fPJ"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Yz0-nf-KwM"/>
+                <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" id="ccV-ly-KfK"/>
+                <constraint firstItem="43" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="doV-qv-cwa"/>
                 <constraint firstAttribute="bottom" secondItem="88" secondAttribute="bottom" constant="50" id="gmN-nK-SH8"/>
-                <constraint firstItem="20" firstAttribute="top" secondItem="1" secondAttribute="top" constant="30" id="hmk-LI-9Z3"/>
+                <constraint firstItem="20" firstAttribute="top" secondItem="1" secondAttribute="top" constant="80" id="hmk-LI-9Z3"/>
                 <constraint firstItem="88" firstAttribute="leading" secondItem="7" secondAttribute="leading" id="i2U-fF-VBP"/>
-                <constraint firstItem="20" firstAttribute="leading" secondItem="28" secondAttribute="leading" id="sfd-np-tiG"/>
-                <constraint firstItem="28" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="xKM-xR-jk0"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="kAz-9t-vnK"/>
+                <constraint firstItem="MoU-gT-QDz" firstAttribute="top" secondItem="UIN-YB-GBW" secondAttribute="bottom" constant="5" id="tJm-o5-g6J"/>
+                <constraint firstItem="28" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="32" id="xKM-xR-jk0"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
+        <image name="Back" width="40" height="40"/>
         <image name="wifi_logo.jpg" width="320" height="145"/>
     </resources>
 </document>

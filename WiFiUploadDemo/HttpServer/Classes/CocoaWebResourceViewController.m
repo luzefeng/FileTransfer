@@ -8,7 +8,7 @@
 
 #import "CocoaWebResourceViewController.h"
 #import "ASProgressPopUpView.h"
-
+#define DOCPATH "Library/Caches/WHCVideos"
 @interface CocoaWebResourceViewController () <ASProgressPopUpViewDataSource>
 @property (nonatomic) IBOutlet ASProgressPopUpView *progressView;
 @end
@@ -19,7 +19,7 @@
 - (void)loadFileList
 {
 	[fileList removeAllObjects];
-	NSString* docDir = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+	NSString* docDir = [NSString stringWithFormat:@"%@/Library/Caches/WHCVideos", NSHomeDirectory()];
 	NSDirectoryEnumerator *direnum = [[NSFileManager defaultManager]
 									  enumeratorAtPath:docDir];
 	NSString *pname;
@@ -31,9 +31,18 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"WifiBg"]];
 	fileList = [[NSMutableArray alloc] init];
 	[self loadFileList];
-	
+//	[backLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backLabelTap:)]];
+//    backLabel.userInteractionEnabled = YES;
+//    backLabel.layer.borderWidth = 1.0;
+//    backLabel.layer.borderColor =[[UIColor alloc] initWithRed:56/255 green:74/255 blue:96/255 alpha:1.0].CGColor;
+//    backLabel.layer.cornerRadius = 5.0;
+//    backLabel.textColor = [UIColor whiteColor];
+    [backImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backLabelTap:)]];
+    backImageView.userInteractionEnabled = YES;
+//    backLabel.tintColor = [[UIColor alloc] initWithRed:56/255 green:74/255 blue:96/255 alpha:1.0];
 	// set up the http server
 	httpServer = [[HTTPServer alloc] init];
 	[httpServer setType:@"_http._tcp."];	
@@ -78,6 +87,12 @@
 	[httpServer release];
 	[fileList release];
     [super dealloc];
+}
+
+
+-(void)backLabelTap:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark progress
@@ -187,7 +202,7 @@
 // provide full file path by given file name
 - (NSString*)filePathForFileName:(NSString*)filename
 {
-	NSString* docDir = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+	NSString* docDir = [NSString stringWithFormat:@"%@/Library/Caches/WHCVideos", NSHomeDirectory()];
 	return [NSString stringWithFormat:@"%@/%@", docDir, filename];
 }
 
@@ -198,7 +213,7 @@
 {
 	if (name == nil || tmpPath == nil)
 		return;
-	NSString* docDir = [NSString stringWithFormat:@"%@/Documents", NSHomeDirectory()];
+	NSString* docDir = [NSString stringWithFormat:@"%@/Library/Caches/WHCVideos", NSHomeDirectory()];
 	NSString *path = [NSString stringWithFormat:@"%@/%@", docDir, name];
 	NSFileManager *fm = [NSFileManager defaultManager];
 	NSError *error;

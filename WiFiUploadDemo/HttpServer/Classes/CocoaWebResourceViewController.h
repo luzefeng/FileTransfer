@@ -11,6 +11,8 @@
 
 @interface CocoaWebResourceViewController : UIViewController <WebFileResourceDelegate> {
 	IBOutlet UILabel *urlLabel;
+    IBOutlet UILabel *backLabel;
+    IBOutlet UIImageView *backImageView;
 	HTTPServer *httpServer;
 	NSMutableArray *fileList;
 }

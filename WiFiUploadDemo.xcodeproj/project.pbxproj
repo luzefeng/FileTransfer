@@ -7,36 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8987D61F1C78B29D004ED8B0 /* docroot in Resources */ = {isa = PBXBuildFile; fileRef = 8987D61E1C78B29D004ED8B0 /* docroot */; };
 		8987D6291C78B743004ED8B0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5BC711C78A5AF00AE9A8D /* CFNetwork.framework */; };
 		8987D62B1C78B743004ED8B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5BC6D1C78A58F00AE9A8D /* CoreGraphics.framework */; };
 		8987D62D1C78B743004ED8B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5BC6B1C78A58B00AE9A8D /* UIKit.framework */; };
 		8987D62F1C78B743004ED8B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5BC691C78A58600AE9A8D /* Foundation.framework */; };
-		8987D6331C78B896004ED8B0 /* WifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8987D6321C78B896004ED8B0 /* WifiViewController.xib */; };
+		89C66C1E1C79F14700A900EF /* CocoaWebResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66BFC1C79F14600A900EF /* CocoaWebResourceViewController.m */; };
+		89C66C1F1C79F14700A900EF /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66BFF1C79F14600A900EF /* AsyncSocket.m */; };
+		89C66C201C79F14700A900EF /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C011C79F14600A900EF /* DDData.m */; };
+		89C66C211C79F14700A900EF /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C031C79F14700A900EF /* DDNumber.m */; };
+		89C66C221C79F14700A900EF /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C051C79F14700A900EF /* DDRange.m */; };
+		89C66C231C79F14700A900EF /* FileResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C071C79F14700A900EF /* FileResource.m */; };
+		89C66C241C79F14700A900EF /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C091C79F14700A900EF /* HTTPAuthenticationRequest.m */; };
+		89C66C251C79F14700A900EF /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C0B1C79F14700A900EF /* HTTPConnection.m */; };
+		89C66C261C79F14700A900EF /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C0D1C79F14700A900EF /* HTTPResponse.m */; };
+		89C66C271C79F14700A900EF /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C0F1C79F14700A900EF /* HTTPServer.m */; };
+		89C66C281C79F14700A900EF /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C66C121C79F14700A900EF /* RegexKitLite.m */; };
+		89C66C291C79F14700A900EF /* WifiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C66C131C79F14700A900EF /* WifiViewController.xib */; };
+		89C66C301C79F14700A900EF /* wifi_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89C66C1C1C79F14700A900EF /* wifi_logo.jpg */; };
+		89C66C311C79F14700A900EF /* wifi_logo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89C66C1D1C79F14700A900EF /* wifi_logo@2x.jpg */; };
+		89C66C331C79F15400A900EF /* docroot in Resources */ = {isa = PBXBuildFile; fileRef = 89C66C321C79F15400A900EF /* docroot */; };
+		89C66C3B1C79F3FD00A900EF /* HttpServer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C66C3A1C79F3FD00A900EF /* HttpServer.xcassets */; };
 		89D5B9411C782F3B00AE9A8D /* WiFiUploadDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5B9401C782F3B00AE9A8D /* WiFiUploadDemoTests.swift */; };
 		89D5B94C1C782F3B00AE9A8D /* WiFiUploadDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5B94B1C782F3B00AE9A8D /* WiFiUploadDemoUITests.swift */; };
 		89D5BBC51C78A09B00AE9A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB061C78A09B00AE9A8D /* AppDelegate.swift */; };
 		89D5BBC61C78A09B00AE9A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D5BB071C78A09B00AE9A8D /* LaunchScreen.storyboard */; };
 		89D5BBC71C78A09B00AE9A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D5BB091C78A09B00AE9A8D /* Main.storyboard */; };
-		89D5BBC81C78A09B00AE9A8D /* CocoaWebResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB101C78A09B00AE9A8D /* CocoaWebResourceViewController.m */; };
-		89D5BBCA1C78A09B00AE9A8D /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB141C78A09B00AE9A8D /* AsyncSocket.m */; };
-		89D5BBCB1C78A09B00AE9A8D /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB161C78A09B00AE9A8D /* DDData.m */; };
-		89D5BBCC1C78A09B00AE9A8D /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB181C78A09B00AE9A8D /* DDNumber.m */; };
-		89D5BBCD1C78A09B00AE9A8D /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB1A1C78A09B00AE9A8D /* DDRange.m */; };
-		89D5BBCE1C78A09B00AE9A8D /* FileResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB1C1C78A09B00AE9A8D /* FileResource.m */; };
-		89D5BBCF1C78A09B00AE9A8D /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB1E1C78A09B00AE9A8D /* HTTPAuthenticationRequest.m */; };
-		89D5BBD01C78A09B00AE9A8D /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB201C78A09B00AE9A8D /* HTTPConnection.m */; };
-		89D5BBD11C78A09B00AE9A8D /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB221C78A09B00AE9A8D /* HTTPResponse.m */; };
-		89D5BBD21C78A09B00AE9A8D /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB241C78A09B00AE9A8D /* HTTPServer.m */; };
-		89D5BBD31C78A09B00AE9A8D /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB271C78A09B00AE9A8D /* RegexKitLite.m */; };
 		89D5BBD91C78A09B00AE9A8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89D5BB2E1C78A09B00AE9A8D /* Info.plist */; };
 		89D5BBDA1C78A09B00AE9A8D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB2F1C78A09B00AE9A8D /* MainViewController.swift */; };
 		89D5BBDB1C78A09B00AE9A8D /* WiFiUploadDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BB311C78A09B00AE9A8D /* WiFiUploadDemo.xcdatamodeld */; };
 		89D5BBDE1C78A09B00AE9A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D5BB371C78A09B00AE9A8D /* Assets.xcassets */; };
 		89D5BC681C78A09B00AE9A8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D5BBC41C78A09B00AE9A8D /* ViewController.swift */; };
 		89D5BC701C78A5AA00AE9A8D /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5BC6F1C78A5AA00AE9A8D /* libicucore.A.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
-		89F434701C797B8D007616DB /* wifi_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89F4346E1C797B8D007616DB /* wifi_logo.jpg */; };
-		89F434711C797B8D007616DB /* wifi_logo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89F4346F1C797B8D007616DB /* wifi_logo@2x.jpg */; };
 		89F434771C798622007616DB /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F434741C798622007616DB /* ASPopUpView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		89F434781C798622007616DB /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F434761C798622007616DB /* ASProgressPopUpView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		97E1CFC2885204A1E9F7127D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9E6F98AEF89B1FD93A306B /* Pods.framework */; };
@@ -62,8 +63,33 @@
 /* Begin PBXFileReference section */
 		0F9E6F98AEF89B1FD93A306B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C81ABB182963EEB1D8AC500 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		8987D61E1C78B29D004ED8B0 /* docroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docroot; sourceTree = "<group>"; };
-		8987D6321C78B896004ED8B0 /* WifiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiViewController.xib; sourceTree = "<group>"; };
+		89C66BFB1C79F14600A900EF /* CocoaWebResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWebResourceViewController.h; sourceTree = "<group>"; };
+		89C66BFC1C79F14600A900EF /* CocoaWebResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaWebResourceViewController.m; sourceTree = "<group>"; };
+		89C66BFE1C79F14600A900EF /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		89C66BFF1C79F14600A900EF /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		89C66C001C79F14600A900EF /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		89C66C011C79F14600A900EF /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		89C66C021C79F14600A900EF /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		89C66C031C79F14700A900EF /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		89C66C041C79F14700A900EF /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		89C66C051C79F14700A900EF /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		89C66C061C79F14700A900EF /* FileResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileResource.h; sourceTree = "<group>"; };
+		89C66C071C79F14700A900EF /* FileResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileResource.m; sourceTree = "<group>"; };
+		89C66C081C79F14700A900EF /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		89C66C091C79F14700A900EF /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		89C66C0A1C79F14700A900EF /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		89C66C0B1C79F14700A900EF /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		89C66C0C1C79F14700A900EF /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		89C66C0D1C79F14700A900EF /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
+		89C66C0E1C79F14700A900EF /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		89C66C0F1C79F14700A900EF /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		89C66C111C79F14700A900EF /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		89C66C121C79F14700A900EF /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		89C66C131C79F14700A900EF /* WifiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiViewController.xib; sourceTree = "<group>"; };
+		89C66C1C1C79F14700A900EF /* wifi_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wifi_logo.jpg; sourceTree = "<group>"; };
+		89C66C1D1C79F14700A900EF /* wifi_logo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wifi_logo@2x.jpg"; sourceTree = "<group>"; };
+		89C66C321C79F15400A900EF /* docroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docroot; sourceTree = "<group>"; };
+		89C66C3A1C79F3FD00A900EF /* HttpServer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HttpServer.xcassets; sourceTree = "<group>"; };
 		89D5B9251C782F3B00AE9A8D /* WiFiUploadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiUploadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D5B93C1C782F3B00AE9A8D /* WiFiUploadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiUploadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D5B9401C782F3B00AE9A8D /* WiFiUploadDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiUploadDemoTests.swift; sourceTree = "<group>"; };
@@ -75,28 +101,6 @@
 		89D5BB061C78A09B00AE9A8D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D5BB081C78A09B00AE9A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D5BB0A1C78A09B00AE9A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		89D5BB0F1C78A09B00AE9A8D /* CocoaWebResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaWebResourceViewController.h; sourceTree = "<group>"; };
-		89D5BB101C78A09B00AE9A8D /* CocoaWebResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaWebResourceViewController.m; sourceTree = "<group>"; };
-		89D5BB131C78A09B00AE9A8D /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
-		89D5BB141C78A09B00AE9A8D /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
-		89D5BB151C78A09B00AE9A8D /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
-		89D5BB161C78A09B00AE9A8D /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
-		89D5BB171C78A09B00AE9A8D /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
-		89D5BB181C78A09B00AE9A8D /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
-		89D5BB191C78A09B00AE9A8D /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
-		89D5BB1A1C78A09B00AE9A8D /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
-		89D5BB1B1C78A09B00AE9A8D /* FileResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileResource.h; sourceTree = "<group>"; };
-		89D5BB1C1C78A09B00AE9A8D /* FileResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileResource.m; sourceTree = "<group>"; };
-		89D5BB1D1C78A09B00AE9A8D /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
-		89D5BB1E1C78A09B00AE9A8D /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
-		89D5BB1F1C78A09B00AE9A8D /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
-		89D5BB201C78A09B00AE9A8D /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
-		89D5BB211C78A09B00AE9A8D /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
-		89D5BB221C78A09B00AE9A8D /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
-		89D5BB231C78A09B00AE9A8D /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
-		89D5BB241C78A09B00AE9A8D /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
-		89D5BB261C78A09B00AE9A8D /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		89D5BB271C78A09B00AE9A8D /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		89D5BB2E1C78A09B00AE9A8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D5BB2F1C78A09B00AE9A8D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		89D5BB321C78A09B00AE9A8D /* WiFiUploadDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiFiUploadDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -107,8 +111,6 @@
 		89D5BC6D1C78A58F00AE9A8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		89D5BC6F1C78A5AA00AE9A8D /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
 		89D5BC711C78A5AF00AE9A8D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		89F4346E1C797B8D007616DB /* wifi_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wifi_logo.jpg; sourceTree = "<group>"; };
-		89F4346F1C797B8D007616DB /* wifi_logo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wifi_logo@2x.jpg"; sourceTree = "<group>"; };
 		89F434731C798622007616DB /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
 		89F434741C798622007616DB /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		89F434751C798622007616DB /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
@@ -147,6 +149,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89C66BF91C79F14600A900EF /* HttpServer */ = {
+			isa = PBXGroup;
+			children = (
+				89C66C321C79F15400A900EF /* docroot */,
+				89C66BFA1C79F14600A900EF /* Classes */,
+				89C66C1A1C79F14700A900EF /* image */,
+			);
+			path = HttpServer;
+			sourceTree = "<group>";
+		};
+		89C66BFA1C79F14600A900EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89C66BFB1C79F14600A900EF /* CocoaWebResourceViewController.h */,
+				89C66BFC1C79F14600A900EF /* CocoaWebResourceViewController.m */,
+				89C66BFD1C79F14600A900EF /* Core */,
+				89C66C101C79F14700A900EF /* RegexKitLite */,
+				89C66C131C79F14700A900EF /* WifiViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		89C66BFD1C79F14600A900EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				89C66BFE1C79F14600A900EF /* AsyncSocket.h */,
+				89C66BFF1C79F14600A900EF /* AsyncSocket.m */,
+				89C66C001C79F14600A900EF /* DDData.h */,
+				89C66C011C79F14600A900EF /* DDData.m */,
+				89C66C021C79F14600A900EF /* DDNumber.h */,
+				89C66C031C79F14700A900EF /* DDNumber.m */,
+				89C66C041C79F14700A900EF /* DDRange.h */,
+				89C66C051C79F14700A900EF /* DDRange.m */,
+				89C66C061C79F14700A900EF /* FileResource.h */,
+				89C66C071C79F14700A900EF /* FileResource.m */,
+				89C66C081C79F14700A900EF /* HTTPAuthenticationRequest.h */,
+				89C66C091C79F14700A900EF /* HTTPAuthenticationRequest.m */,
+				89C66C0A1C79F14700A900EF /* HTTPConnection.h */,
+				89C66C0B1C79F14700A900EF /* HTTPConnection.m */,
+				89C66C0C1C79F14700A900EF /* HTTPResponse.h */,
+				89C66C0D1C79F14700A900EF /* HTTPResponse.m */,
+				89C66C0E1C79F14700A900EF /* HTTPServer.h */,
+				89C66C0F1C79F14700A900EF /* HTTPServer.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		89C66C101C79F14700A900EF /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				89C66C111C79F14700A900EF /* RegexKitLite.h */,
+				89C66C121C79F14700A900EF /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		89C66C1A1C79F14700A900EF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				89C66C3A1C79F3FD00A900EF /* HttpServer.xcassets */,
+				89C66C1C1C79F14700A900EF /* wifi_logo.jpg */,
+				89C66C1D1C79F14700A900EF /* wifi_logo@2x.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		89D5B91C1C782F3B00AE9A8D = {
 			isa = PBXGroup;
 			children = (
@@ -191,12 +259,12 @@
 		89D5BB051C78A09B00AE9A8D /* WiFiUploadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				89C66BF91C79F14600A900EF /* HttpServer */,
 				89F434721C798622007616DB /* ASProgressPopUpView */,
 				89D5BB061C78A09B00AE9A8D /* AppDelegate.swift */,
 				89D5BB071C78A09B00AE9A8D /* LaunchScreen.storyboard */,
 				89D5BB091C78A09B00AE9A8D /* Main.storyboard */,
 				89D5BB0B1C78A09B00AE9A8D /* Common */,
-				89D5BB0D1C78A09B00AE9A8D /* HttpServer */,
 				89D5BB2E1C78A09B00AE9A8D /* Info.plist */,
 				89D5BB2F1C78A09B00AE9A8D /* MainViewController.swift */,
 				89D5BB301C78A09B00AE9A8D /* Model */,
@@ -221,62 +289,6 @@
 			children = (
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		89D5BB0D1C78A09B00AE9A8D /* HttpServer */ = {
-			isa = PBXGroup;
-			children = (
-				89F4346D1C797B8D007616DB /* image */,
-				8987D61E1C78B29D004ED8B0 /* docroot */,
-				89D5BB0E1C78A09B00AE9A8D /* Classes */,
-			);
-			path = HttpServer;
-			sourceTree = "<group>";
-		};
-		89D5BB0E1C78A09B00AE9A8D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				89D5BB0F1C78A09B00AE9A8D /* CocoaWebResourceViewController.h */,
-				8987D6321C78B896004ED8B0 /* WifiViewController.xib */,
-				89D5BB101C78A09B00AE9A8D /* CocoaWebResourceViewController.m */,
-				89D5BB121C78A09B00AE9A8D /* Core */,
-				89D5BB251C78A09B00AE9A8D /* RegexKitLite */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		89D5BB121C78A09B00AE9A8D /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				89D5BB131C78A09B00AE9A8D /* AsyncSocket.h */,
-				89D5BB141C78A09B00AE9A8D /* AsyncSocket.m */,
-				89D5BB151C78A09B00AE9A8D /* DDData.h */,
-				89D5BB161C78A09B00AE9A8D /* DDData.m */,
-				89D5BB171C78A09B00AE9A8D /* DDNumber.h */,
-				89D5BB181C78A09B00AE9A8D /* DDNumber.m */,
-				89D5BB191C78A09B00AE9A8D /* DDRange.h */,
-				89D5BB1A1C78A09B00AE9A8D /* DDRange.m */,
-				89D5BB1B1C78A09B00AE9A8D /* FileResource.h */,
-				89D5BB1C1C78A09B00AE9A8D /* FileResource.m */,
-				89D5BB1D1C78A09B00AE9A8D /* HTTPAuthenticationRequest.h */,
-				89D5BB1E1C78A09B00AE9A8D /* HTTPAuthenticationRequest.m */,
-				89D5BB1F1C78A09B00AE9A8D /* HTTPConnection.h */,
-				89D5BB201C78A09B00AE9A8D /* HTTPConnection.m */,
-				89D5BB211C78A09B00AE9A8D /* HTTPResponse.h */,
-				89D5BB221C78A09B00AE9A8D /* HTTPResponse.m */,
-				89D5BB231C78A09B00AE9A8D /* HTTPServer.h */,
-				89D5BB241C78A09B00AE9A8D /* HTTPServer.m */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		89D5BB251C78A09B00AE9A8D /* RegexKitLite */ = {
-			isa = PBXGroup;
-			children = (
-				89D5BB261C78A09B00AE9A8D /* RegexKitLite.h */,
-				89D5BB271C78A09B00AE9A8D /* RegexKitLite.m */,
-			);
-			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
 		89D5BB301C78A09B00AE9A8D /* Model */ = {
@@ -323,15 +335,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		89F4346D1C797B8D007616DB /* image */ = {
-			isa = PBXGroup;
-			children = (
-				89F4346E1C797B8D007616DB /* wifi_logo.jpg */,
-				89F4346F1C797B8D007616DB /* wifi_logo@2x.jpg */,
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 		89F434721C798622007616DB /* ASProgressPopUpView */ = {
@@ -475,14 +478,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F434711C797B8D007616DB /* wifi_logo@2x.jpg in Resources */,
+				89C66C331C79F15400A900EF /* docroot in Resources */,
 				89D5BBD91C78A09B00AE9A8D /* Info.plist in Resources */,
+				89C66C301C79F14700A900EF /* wifi_logo.jpg in Resources */,
 				89D5BBC61C78A09B00AE9A8D /* LaunchScreen.storyboard in Resources */,
 				89D5BBC71C78A09B00AE9A8D /* Main.storyboard in Resources */,
-				89F434701C797B8D007616DB /* wifi_logo.jpg in Resources */,
-				8987D61F1C78B29D004ED8B0 /* docroot in Resources */,
+				89C66C311C79F14700A900EF /* wifi_logo@2x.jpg in Resources */,
+				89C66C3B1C79F3FD00A900EF /* HttpServer.xcassets in Resources */,
 				89D5BBDE1C78A09B00AE9A8D /* Assets.xcassets in Resources */,
-				8987D6331C78B896004ED8B0 /* WifiViewController.xib in Resources */,
+				89C66C291C79F14700A900EF /* WifiViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,23 +559,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C66C1E1C79F14700A900EF /* CocoaWebResourceViewController.m in Sources */,
+				89C66C231C79F14700A900EF /* FileResource.m in Sources */,
 				89D5BC681C78A09B00AE9A8D /* ViewController.swift in Sources */,
-				89D5BBD11C78A09B00AE9A8D /* HTTPResponse.m in Sources */,
 				89D5BBDA1C78A09B00AE9A8D /* MainViewController.swift in Sources */,
+				89C66C221C79F14700A900EF /* DDRange.m in Sources */,
+				89C66C201C79F14700A900EF /* DDData.m in Sources */,
 				89D5BBDB1C78A09B00AE9A8D /* WiFiUploadDemo.xcdatamodeld in Sources */,
+				89C66C251C79F14700A900EF /* HTTPConnection.m in Sources */,
 				89F434781C798622007616DB /* ASProgressPopUpView.m in Sources */,
-				89D5BBCE1C78A09B00AE9A8D /* FileResource.m in Sources */,
-				89D5BBD01C78A09B00AE9A8D /* HTTPConnection.m in Sources */,
-				89D5BBCA1C78A09B00AE9A8D /* AsyncSocket.m in Sources */,
-				89D5BBD21C78A09B00AE9A8D /* HTTPServer.m in Sources */,
-				89D5BBCB1C78A09B00AE9A8D /* DDData.m in Sources */,
-				89D5BBD31C78A09B00AE9A8D /* RegexKitLite.m in Sources */,
-				89D5BBC81C78A09B00AE9A8D /* CocoaWebResourceViewController.m in Sources */,
 				89F434771C798622007616DB /* ASPopUpView.m in Sources */,
-				89D5BBCD1C78A09B00AE9A8D /* DDRange.m in Sources */,
-				89D5BBCC1C78A09B00AE9A8D /* DDNumber.m in Sources */,
+				89C66C261C79F14700A900EF /* HTTPResponse.m in Sources */,
+				89C66C281C79F14700A900EF /* RegexKitLite.m in Sources */,
+				89C66C241C79F14700A900EF /* HTTPAuthenticationRequest.m in Sources */,
 				89D5BBC51C78A09B00AE9A8D /* AppDelegate.swift in Sources */,
-				89D5BBCF1C78A09B00AE9A8D /* HTTPAuthenticationRequest.m in Sources */,
+				89C66C211C79F14700A900EF /* DDNumber.m in Sources */,
+				89C66C271C79F14700A900EF /* HTTPServer.m in Sources */,
+				89C66C1F1C79F14700A900EF /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
